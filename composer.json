@@ -1,0 +1,15 @@
+{
+    "name": "seiffert/crowd-auth-bundle",
+    "description": "This bundle allows Symfony apps to authenticate users against Atlassian Crowd.",
+    "version": "1.0.0",
+    "license": "CC-BY-SA-3.0",
+    "autoload": {
+        "psr-0": { "Seiffert\\CrowdAuthBundle": "" }
+    },
+    "target-dir": "Seiffert/CrowdAuthBundle",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.2.0",
+        "seiffert/crowd-rest-bundle": "dev-master"
+    }
+}

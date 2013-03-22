@@ -1,0 +1,16 @@
+parameters:
+    ps.crowd_auth.user_provider.class: Seiffert\CrowdAuthBundle\Security\User\CrowdUserProvider
+    ps.crowd.security.authentication.provider.class: Seiffert\CrowdAuthBundle\Security\Authentication\Provider\CrowdProvider
+
+services:
+    ps.crowd_auth.user_provider:
+        class: %ps.crowd_auth.user_provider.class%
+        arguments:
+            - @ps.crowd
+            - @session
+
+    ps.crowd.security.authentication.provider:
+        class: %ps.crowd.security.authentication.provider.class%
+        arguments:
+            - ''
+            - @ps.crowd
