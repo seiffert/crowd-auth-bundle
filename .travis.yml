@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+    - composer install --dev
+    - mkdir build
+    - wget http://pear.phpunit.de/get/phploc.phar
+
+script:
+    - ./bin/phpunit
+    - php phploc.phar --log-csv build/phploc.csv --exclude vendor .
