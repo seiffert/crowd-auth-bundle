@@ -19,5 +19,8 @@
         "phpunit/phpunit": "3.7.*",
         "phpunit/php-code-coverage": "1.2.*",
         "phpunit/php-timer": "1.0.4"
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
