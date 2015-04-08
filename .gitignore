@@ -1,2 +1,6 @@
 # Symfony directories
 vendor/*
+
+# Build directories.
+build
+composer.lock
