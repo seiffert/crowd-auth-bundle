@@ -13,14 +13,12 @@
         "seiffert/crowd-rest-bundle": "dev-master"
     },
     "require-dev": {
+        "phploc/phploc": "*",
         "phpmd/phpmd": "1.4.0",
         "pdepend/pdepend": "1.1.0",
         "squizlabs/php_codesniffer": "*",
         "phpunit/phpunit": "3.7.*",
         "phpunit/php-code-coverage": "1.2.*",
         "phpunit/php-timer": "1.0.4"
-    },
-    "config": {
-        "bin-dir": "bin"
     }
 }
